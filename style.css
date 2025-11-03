@@ -1,0 +1,110 @@
+/* Pizzaria/style.css */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#111;color:#fff}
+header{padding:50px 20px;text-align:center;background:#222;}
+header h1{font-size:40px;color:#ff4444;text-shadow:0 0 10px #000}
+.cardapio{max-width:950px;margin:40px auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+/* Estilos para itens do cardápio */
+.item{ /* Adicionado comentário para clareza */
+  background:#191919;
+  padding:15px;
+  border-radius:14px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor:pointer;
+}
+.item:hover{ /* Adicionado comentário para clareza */
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.6);
+}
+.item img{ /* Adicionado comentário para clareza */
+  width:100%;
+  border-radius:12px;
+  margin-bottom:10px;
+  transition: transform 0.3s;
+}
+.item img:hover{ /* Adicionado comentário para clareza */
+  transform: scale(1.08);
+}
+
+.zap-btn{position:fixed;right:20px;bottom:20px;background:#25d366;padding:18px 28px;border-radius:50px;color:#fff;font-size:18px;text-decoration:none;font-weight:bold;box-shadow:0 0 20px #25d366;transition:.2s;cursor:pointer;}
+.zap-btn:hover{transform:scale(1.08);} /* Adicionado comentário para clareza */
+.item button{ 
+  padding:12px 25px;
+  border:none;
+  border-radius:50px;
+  background: linear-gradient(45deg, #25d366, #128c7e);
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.item button:hover{
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #25d366;
+}
+
+.item-carrinho button{ 
+  margin-left:5px;
+  padding:5px 12px;
+  border:none;
+  border-radius:50px;
+  background:#ff4444;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  transition: transform 0.2s;
+}
+.item-carrinho button:hover{
+  transform: scale(1.1);
+}
+#Voltar{
+  position:fixed;
+  top:20px;
+  left:20px;
+  padding:10px 15px;
+  border:none;
+  border-radius:50px;
+  background:#ff4444;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  transition: transform 0.2s;
+}
+#Voltar:hover{
+  transform: scale(1.1);
+}
+.item.combo{
+  border: 2px solid #ff4444;
+  box-shadow: 0 0 15px rgba(255,68,68,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item.combo:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,68,68,0.8);
+}
+
+.item.combo .descricao{
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 8px;
+}
+
+.item.combo button{
+  background: linear-gradient(45deg, #ff4444, #ff7777);
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item.combo button:hover{
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #ff4444;
+}
