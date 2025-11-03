@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrinho — Pizzaria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="Voltar" onclick="window.history.back()">Voltar</button>
+
+<header>
+  <h1>Seu Carrinho</h1>
+</header>
+
+<section class="cardapio" id="carrinho-container">
+  <!-- itens do carrinho via JS -->
+</section>
+
+<button class="zap-btn" onclick="finalizarPedido()">Finalizar Pedido no WhatsApp</button>
+
+<script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    mostrarCarrinho();
+});
+</script>
+</body>
+</html>

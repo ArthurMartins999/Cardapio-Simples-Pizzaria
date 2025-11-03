@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizzaria — Cardápio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Pizza Quente & Crocante</h1>
+</header>
+
+<section class="cardapio"> <!-- itens do cardápio -->
+    <div class="item combo" data-nome="Combo Família" data-preco="120.00">
+  <img src="asset/images/combo.jpg" alt="Combo Família">
+  <div class="info">
+    <h3>Combo Família</h3> <!-- Corrigido o caminho da imagem -->
+    <p class="descricao">Pizza grande + 2 refrigerantes + sobremesa</p>
+    <span>R$ 120,00</span>
+    <button onclick="adicionarCarrinho('Combo Família', 120.00, 'asset/images/combo.jpg')">Adicionar Combo</button>
+  </div>
+</div>
+ <!-- Itens do cardápio -->
+  <div class="item" data-nome="Margherita" data-preco="39.90">
+    <img src="asset/images/margherita.jpg" alt="Margherita">
+    <div class="info">
+      <h3>Margherita</h3>
+      <span>R$ 39,90</span>
+      <button onclick="adicionarCarrinho('Margherita', 39.90)">Adicionar</button>
+    </div>
+  </div>
+ <!-- Itens do cardápio -->
+  <div class="item" data-nome="Calabresa" data-preco="42.90">
+    <img src="asset/images/calabresa.jpg" alt="Calabresa">
+    <div class="info">
+      <h3>Calabresa</h3>
+      <span>R$ 42,90</span>
+      <button onclick="adicionarCarrinho('Calabresa', 42.90)">Adicionar</button>
+    </div>
+  </div>
+ <!-- Itens do cardápio -->
+  <div class="item" data-nome="Frango c/ Catupiry" data-preco="47.90">
+    <img src="asset/images/frango c catupiry.jpg" alt="Frango c/ Catupiry">
+    <div class="info">
+      <h3>Frango c/ Catupiry</h3>
+      <span>R$ 47,90</span>
+      <button onclick="adicionarCarrinho('Frango c/ Catupiry', 47.90)">Adicionar</button>
+    </div>
+  </div>
+  <!-- Itens do cardápio -->
+  <div class="item" data-nome="4 Queijos" data-preco="49.90">
+    <img src="asset/images/4queijos.jpg" alt="4 Queijos">
+    <div class="info">
+      <h3>4 Queijos</h3>
+      <span>R$ 49,90</span>
+      <button onclick="adicionarCarrinho('4 Queijos', 49.90)">Adicionar</button>
+    </div>
+  </div>
+  <!-- Itens do cardápio -->
+  <div class="item" data-nome="Portuguesa" data-preco="45.90">
+    <img src="asset/images/portuguesa.jpg" alt="Portuguesa">
+    <div class="info">
+      <h3>Portuguesa</h3>
+      <span>R$ 45,90</span>
+      <button onclick="adicionarCarrinho('Portuguesa', 45.90)">Adicionar</button>
+    </div>
+  </div>
+<!-- Itens do cardápio -->
+  <div class="item" data-nome="Pepperoni" data-preco="52.90">
+    <img src="asset/images/peperoni.jpg" alt="Pepperoni">
+    <div class="info">
+      <h3>Pepperoni</h3>
+      <span>R$ 52,90</span>
+      <button onclick="adicionarCarrinho('Pepperoni', 52.90)">Adicionar</button>
+    </div>
+  </div>
+  <!-- Mais itens podem ser adicionados aqui -->
+</section>
+
+<!-- Fim dos itens do cardápio -->
+<a class="zap-btn" href="carrinho.html">Ver Carrinho 🛒</a>
+
+<script src="script.js"></script>
+</body>
+</html>
